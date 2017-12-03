@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 RUN gem install rails
 RUN gem install mysql2
 
-#ADD Gemfile /tmp/Gemfile
+ADD Gemfile /tmp/Gemfile
 
-#RUN cd /tmp && bundle install
+RUN cd /tmp && bundle install
